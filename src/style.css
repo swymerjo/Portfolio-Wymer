@@ -79,7 +79,6 @@ hr {
 }
 .profile-picture {
   border-radius: 50%;
-  border: 2px solid #ff865f;
   width: 250px;
   height: 250px;
   box-shadow: 0 4px 6px 0 rgb(34, 60, 80, 0.16);
