@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jason Bateman 🎭</title>
+    <style>
+      body {
+        background: #df721c;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: "Indie Flower", cursive;
+      }
+      h1 {
+        text-align: center;
+        color: #51a1a6;
+        text-transform: uppercase;
+        font-size: 30pt;
+        margin: 0;
+      }
+      h2 {
+        text-align: center;
+        color: #51a1a6;
+        border: 2px solid #ffb740;
+        padding: 20px;
+        font-size: 22pt;
+        border-radius: 4px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin: 20px 0 10px;
+        font-family: "Indie Flower", cursive;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #51a1a6;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+        font-family: "Indie Flower", cursive;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+        background: #ffb740;
+        color: white;
+      }
+      .profile-picture {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 30px;
+        width: 350px;
+      }
+      .profile-picture:hover {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.1);
+      }
+      .learn-more {
+        display: block;
+        margin-top: 10px;
+        color: rgb(1, 161, 157);
+        text-decoration: none;
+        font-size: 18px;
+        font-family: "Indie Flower", cursive;
+        font-weight: bold;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+        font-family: "Indie Flower", cursive;
+        font-weight: bold;
+      }
+      .footer {
+        text-align: center;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+        background: #fde49c;
+        border-radius: 4pt;
+      }
+      .my-name {
+        color: #51a1a6;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .my-name:hover {
+        text-decoration: underline;
+        font-weight: bold;
+      }
+      .smartlessLink {
+        text-decoration: none;
+        color: white;
+      }
+      .smartlessLink:hover {
+        text-decoration: underline;
+        color: white;
+      }
+      .contactUs {
+        text-decoration: none;
+        color: white;
+      }
+      .contactUs:hover {
+        text-decoration: underline;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Jason Bateman</h1>
+      <h1>🌟</h1>
+      <h2>American actor with great hair...</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/017/434/original/Jason-Bateman.jpg?1632136010"
+        alt="Jason Bateman"
+        class="profile-picture"
+      />
+      <hr />
+      <p>
+        Jason Kent Bateman is an American actor, director, and producer. He
+        began acting on television in the early 1980s on Little House on the
+        Prairie, Silver Spoons, and The Hogan Family.
+      </p>
+
+      <hr />
+      <a
+        href="https://en.wikipedia.org/wiki/Jason_Bateman"
+        target="_blank"
+        class="learn-more"
+        >Learn more on Wikipedia</a
+      >
+      <br />
+      <br />
+      <button class="smartlessButton">
+        <a
+          class="smartlessLink"
+          href="https://smartless.simplecast.com/"
+          target="_blank"
+          >👉Listen to Smartless podcast🎧</a
+        >
+      </button>
+      <button class="contactUs">Contact us!📧</button>
+      <br />
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/XSZVMeynt5s"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <br />
+      <p class="footer">
+        This page was built by
+        <a
+          class="my-name"
+          href="https://www.linkedin.com/in/sammy-jo-wymer-6391b2205/"
+          target="_blank"
+          >Sammy Wymer</a
+        >
+      </p>
+    </div>
+    <script>
+      function contact() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let age = prompt("How old are you?");
+
+        if (age < 16) {
+          alert("Sorry you are too young for this website :(");
+        } else {
+          alert("Thanks for your email, " + name + ". We will be in touch!");
+        }
+      }
+
+      let contactUs = document.querySelector(".contactUs");
+      contactUs.addEventListener("click", contact);
+    </script>
+  </body>
+</html>
