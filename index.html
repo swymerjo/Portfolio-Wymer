@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sammy Wymer 🌻</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img class="profile-picture" src="images/Picture Sammy.JPG" width="250" />
+      <h1>Sammy Wymer</h1>
+      <h3>🌻</h3>
+      <h3>Research Assistant at University of Freiburg</h3>
+      <p>"I'm a loser, loosen up"</p>
+      <hr />
+
+      <div class="about-grid">
+        <div class="i-am">
+          <h3>I am</h3>
+          <ul class="about-list">
+            <li class="about-list-item">A scientist</li>
+            <li class="about-list-item">A footballer</li>
+            <li class="about-list-item">A web designer</li>
+            <li class="about-list-item">An avid reader</li>
+            <li class="about-list-item">A Northerner</li>
+          </ul>
+        </div>
+
+        <div class="i-like">
+          <h3>I like</h3>
+          <ul class="about-list">
+            <li class="about-list-item">Playing football</li>
+            <li class="about-list-item">Coding</li>
+            <li class="about-list-item">Analysing and visualising data</li>
+            <li class="about-list-item">Reading fantasy and horror books</li>
+            <li class="about-list-item">
+              Tame Impala, The Beatles, Arctic Monkeys
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr />
+      <br />
+      <h3 class="project-heading">My Projects</h3>
+      <div class="project-grid">
+        <div class="project-image-wrapper">
+          <img
+            class="project-image"
+            src="images\LFC.jpg"
+            width="250"
+            height="200"
+          />
+          <h4>
+            <a href="Running down the wing.html" target="_blank">Project 1</a>
+          </h4>
+        </div>
+        <div class="project-image-wrapper">
+          <img
+            class="project-image"
+            src="images\Jason-Bateman.jpg"
+            width="250"
+          />
+          <h4><a href="Jason-Bateman.html" target="_blank">Project 2</a></h4>
+        </div>
+        <div class="project-image-wrapper">
+          <img
+            class="project-image"
+            src="images\IMG-20210918-WA0023.jpg"
+            width="250"
+            height="200"
+          />
+          <h4><a href="Seaglass_2.html" target="_blank">Project 3</a></h4>
+        </div>
+        <div class="project-image-wrapper">
+          <img
+            class="project-image"
+            src="images/weather-app-pic.PNG"
+            width="250"
+            height="200"
+          />
+          <h4>
+            <a href="SheCodesPlus Project/Weather-app.html" target="_blank"
+              >Project 4</a
+            >
+          </h4>
+        </div>
+      </div>
+    </div>
+    <button class="treatButton">
+      <a
+        href="https://coolmenshair.com/wp-content/uploads/Jason-Bateman-formal-hairstyle.jpg"
+        target="_blank"
+      >
+        👉Click here for a treat😜
+      </a>
+    </button>
+    <button class="contactUs">Contact us!📧</button>
+
+    <hr />
+
+    <div class="links-and-contact">
+      <div class="links">
+        <h3>Links</h3>
+        <ul class="links-list">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/sammy-jo-wymer-6391b2205/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/swymerjo" target="_blank">GitHub</a>
+          </li>
+          <li>
+            <a href="https://twitter.com/SammyWymer" target="_blank">Twitter</a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <form action="#">
+          <label for="email">
+            <h4>Email</h4>
+            <input id="email" placeholder="Enter your email" />
+          </label>
+          <label for="message">
+            <h4>Message:</h4>
+            <textarea id="message">Your message</textarea>
+          </label>
+          <div class="submit-button-wrapper">
+            <input id="submit-button" type="submit" value="Send Message" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <p class="footer">
+      This page was built by
+      <a
+        class="my-name"
+        href="https://www.linkedin.com/in/sammy-jo-wymer-6391b2205/"
+        target="_blank"
+        >Sammy Wymer</a
+      >
+    </p>
+    <div class="container">
+      <div class="certificates">
+        <img src="images/firstcertificate.png" width="400" />
+      </div>
+    </div>
+    <script>
+      function contact() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let age = prompt("How old are you?");
+
+        alert("Thanks for your email, " + name + ". We will be in touch!");
+      }
+
+      let contactUs = document.querySelector(".contactUs");
+      contactUs.addEventListener("click", contact);
+    </script>
+  </body>
+</html>

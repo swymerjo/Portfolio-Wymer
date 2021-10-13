@@ -1,0 +1,217 @@
+body {
+  background: rgb(1, 161, 157);
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Indie Flower", cursive;
+}
+h1 {
+  text-align: center;
+  color: rgb(1, 161, 157);
+  text-transform: uppercase;
+  font-size: 42pt;
+  margin: 0;
+}
+
+h3 {
+  text-align: center;
+  color: #ff865f;
+  font-size: 20pt;
+  margin: 0;
+}
+
+p {
+  font-size: 20px;
+  color: #fee441;
+  line-height: 1.5;
+  margin: 20px 0 10px;
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+  font-weight: bolder;
+  font-style: italic;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+li {
+  color: gray;
+  font-style: unset;
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+  list-style: none;
+  margin: 0 auto;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  background: #006e99;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  transition: all 200ms ease-in-out;
+  font-family: "Indie Flower", cursive;
+}
+button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  background: #fee441;
+}
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.container {
+  background: wheat;
+  border-radius: 4px;
+}
+.profile-picture {
+  border-radius: 50%;
+  border: 2px solid #ff865f;
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 4px 6px 0 rgb(34, 60, 80, 0.16);
+  transition: all ease-in-out 0.2s;
+  padding: 0;
+  margin-left: 30%;
+}
+
+.profile-picture:hover {
+  box-shadow: 0 8px 0 rgb(34, 68, 80, 0.16);
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+}
+
+.about-list-item {
+  font-style: italic;
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.project-heading {
+  text-align: center;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: 25% 75 15%;
+}
+.project-image {
+  border-radius: 5px;
+  box-shadow: 0 4px 0 rgba(34, 60, 80, 0.16);
+  transition: all ease-in-out 0.2s;
+  padding: 0%;
+  margin: 0%;
+}
+.project-image:hover {
+  filter: brightness(0.75);
+  box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
+}
+.project-image-wrapper {
+  justify-self: center;
+  padding: 4%;
+  position: relative;
+  margin: 0%;
+}
+.project-image-wrapper > h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  visibility: hidden;
+  z-index: 2;
+  transition: all ease-in-out 0.2s;
+}
+.project-image-wrapper:hover > h4 {
+  visibility: visible;
+}
+
+.footer {
+  text-align: center;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px 60px;
+}
+
+.my-name {
+  color: #ff865f;
+  text-decoration: none;
+  font-weight: bold;
+}
+.my-name:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.treatButton {
+  text-decoration: none;
+  color: white;
+  background: #ff865f;
+}
+.treatButton:hover {
+  text-decoration: underline;
+  color: white;
+}
+.contactUs {
+  text-decoration: none;
+  color: white;
+  background: #ff865f;
+}
+.contactUs:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+form input,
+textarea {
+  padding: 5px;
+  border-radius: 5px;
+  width: 240px;
+  font-family: "Indie Flower", cursive;
+}
+
+form input [type="submit"] {
+  width: 250px;
+}
+
+.submit-button-wrapper {
+  margin: 20px 0;
+}
+.links-and-contact {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  font-family: "Indie Flower", cursive;
+}
+.links {
+  justify-self: center;
+}
+.links-list {
+  list-style: none;
+  padding: 0;
+  font-family: "Indie Flower", cursive;
+  text-align: right;
+}
+.certificates {
+  display: block;
+  margin-left: 20%;
+}
+h4 a {
+  color: white;
+}
